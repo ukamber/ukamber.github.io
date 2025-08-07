@@ -109,6 +109,6 @@ a {
 }
 .responsive-banner {
   width: 100%;
-  height: auto;
-  display: block;
+  max-height: 200px;
+  object-fit: cover; /* or 'contain' depending on how you want it to behave */
 }
