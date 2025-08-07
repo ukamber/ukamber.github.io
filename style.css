@@ -94,7 +94,8 @@ a {
 
   nav a {
     display: block;
-
+  }
+}
 .social-links {
   display: flex;
   justify-content: center;
