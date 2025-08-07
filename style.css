@@ -21,7 +21,7 @@ body {
 
 header {
   /*background-color: #f0f0f0;*/
-  background-image: url('https://github.com/ukamber/images/blob/398551e2b6fbb90762f5831cfaf5f3a9ef5809b7/banner-3-01.png');
+  background-image: url('../banner-3-01.png');
   padding: 30px 0;
   text-align: center;
   border-bottom: 1px solid #ddd;
