@@ -98,7 +98,7 @@ a {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 55px; /* space between links */
+  gap: 105px; /* space between links */
   flex-wrap: wrap;
   margin-top: 10px; /* optional: space above links */
 }
@@ -110,6 +110,6 @@ a {
 .responsive-banner {
   width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 20px;
   object-fit: cover; /* or 'contain' depending on how you want it to behave */
 }
