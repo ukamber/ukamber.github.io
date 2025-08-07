@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  /*background-color: #f0f0f0;*/
+  background-color: #000000;
   background-image: url('banner-3.png');
   background-repeat: no-repeat;
   background-position: center;
