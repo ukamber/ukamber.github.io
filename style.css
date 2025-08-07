@@ -110,6 +110,6 @@ a {
 .responsive-banner {
   width: 100%;
   height: auto;
-  max-height: 20px;
-  object-fit: cover; /* or 'contain' depending on how you want it to behave */
+  max-height: 200px;
+  object-fit: contain;
 }
