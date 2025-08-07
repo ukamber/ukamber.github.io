@@ -28,7 +28,7 @@ header {
   background-size: contain; 
   padding: 30px 0;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #000000;
 }
 
 header h1 {
@@ -50,7 +50,7 @@ nav {
 nav a {
   margin: 0 10px;
   text-decoration: none;
-  color: #0077cc;
+  color: #fae97a;
   font-weight: 500;
 }
 
@@ -60,7 +60,7 @@ nav a:hover {
 
 section {
   padding: 40px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #000000;
 }
 
 h2 {
@@ -82,7 +82,7 @@ footer {
 }
 
 a {
-  color: #0077cc;
+  color: #fae97a;
 }
 
 /* RESPONSIVE DESIGN */
