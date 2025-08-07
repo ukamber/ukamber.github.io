@@ -94,3 +94,16 @@ a {
 
   nav a {
     display: block;
+
+  .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* space between links */
+  flex-wrap: wrap;
+  margin-top: 10px; /* optional: space above links */
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #fce779; /* optional: style the links */
+}
