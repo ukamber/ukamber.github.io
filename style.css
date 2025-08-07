@@ -99,7 +99,7 @@ a {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 35px;
+  gap: 25px;
   flex-wrap: wrap;
   margin-top: 10px;
 }
