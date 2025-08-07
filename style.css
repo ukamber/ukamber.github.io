@@ -21,11 +21,11 @@ body {
 }
 
 header {
-background-color: #000000;
- /* background-image: url('banner-4-01.png');
+  background-color: #000000;
+  background-image: url('banner-4-01.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; */
+  background-size: cover;
   padding: 30px 0;
   text-align: center;
   border-bottom: 1px solid #000000;
@@ -99,14 +99,14 @@ a {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 105px; /* space between links */
+  gap: 35px;
   flex-wrap: wrap;
-  margin-top: 10px; /* optional: space above links */
+  margin-top: 10px;
 }
 
 .social-links a {
   text-decoration: none;
-  color: #fce779; /* optional: style the links */
+  color: #fce779;
 }
 .responsive-banner {
   width: 100%;
