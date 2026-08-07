@@ -87,7 +87,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+sup {
+  font-size: 0.55em;
+}
 sup a {
   text-decoration: none;
 }
