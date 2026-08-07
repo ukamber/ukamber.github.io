@@ -85,7 +85,11 @@ footer {
 }
 
 a {
-  color: #fae97a;
+  color: #0f6e56;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* RESPONSIVE DESIGN */
