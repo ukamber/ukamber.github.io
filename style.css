@@ -21,8 +21,8 @@ body {
 }
 
 section .container {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 header {
@@ -123,7 +123,7 @@ sup a {
 
 .about-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 30px;
 }
 
