@@ -116,3 +116,38 @@ sup a {
   text-decoration: none;
   color: #fce779;
 }
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.about-photo {
+  width: 180px;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.research-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-photo {
+    width: 140px;
+    margin: 0 auto;
+  }
+}
