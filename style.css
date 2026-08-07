@@ -22,12 +22,16 @@ body {
 
 header {
   background-color: #000000;
-  background-image: url('banner-4-01.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   text-align: center;
   border-bottom: 1px solid #000000;
+}
+
+/* Banner always shows in full, at its native aspect ratio,
+   scaling to the width of any device (phone, tablet, desktop, ultrawide). */
+.responsive-banner {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 header h1 {
@@ -107,11 +111,3 @@ a {
   text-decoration: none;
   color: #fce779;
 }
-/*
-.responsive-banner {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: contain;
-}
-*/
