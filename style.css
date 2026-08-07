@@ -58,8 +58,7 @@ nav a:hover {
 }
 
 section {
-  padding: 30px 0;
-  border-bottom: 1px solid #000000;
+  padding: 12px 0;
 }
 
 h2 {
@@ -124,7 +123,7 @@ sup a {
 }
 
 .about-photo {
-  width: 180px;
+  width: 150px;
   height: auto;
   flex-shrink: 0;
   display: block;
@@ -147,7 +146,7 @@ sup a {
   }
 
   .about-photo {
-    width: 140px;
+    width: 120px;
     margin: 0 auto;
   }
 }
