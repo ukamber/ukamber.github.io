@@ -20,6 +20,11 @@ body {
   padding: 20px;
 }
 
+section .container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 header {
   background-color: #000000;
   background-image: url('banner-4-01.png');
