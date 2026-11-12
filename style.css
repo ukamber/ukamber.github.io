@@ -20,31 +20,31 @@ body {
   padding: 20px;
 }
 
-section .container {
-  padding-top: 2px;
-  padding-bottom: 2px;
+header .container {
+  padding-bottom: 8px;
 }
 
-header {
-  background-color: #000000;
-  background-image: url('banner-4-01.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+/* Banner spans the text column; text sizes are % of banner width (cqw)
+   so they always stay in the empty middle, between the spectra lines. */
+.banner {
+  container-type: inline-size;
+  aspect-ratio: 12876 / 1773;
+  background: #000 url('banner-4-01.png') center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border-bottom: 1px solid #000000;
-}
-
-header h1 {
-  font-size: 3.5rem;
-  margin-bottom: 10px;
   color: #f5f3dc;
 }
 
-header p {
-  font-size: 1.2rem;
-  /*color: #555; */
-  color: #f5f3dc;
+.banner h1 {
+  font-size: 4.6cqw;
+  line-height: 1.1;
+}
+
+.banner p {
+  font-size: 2.2cqw;
 }
 
 nav {
@@ -78,10 +78,18 @@ ul {
 
 footer {
   text-align: center;
-  padding: 10px;
   font-size: 0.9rem;
   color: #fce779;
+}
+
+/* Black bar sits inside the container, so it matches the banner width */
+footer .container {
+  padding-top: 8px;
+}
+
+footer p {
   background-color: #000000;
+  padding: 10px;
 }
 
 a {
@@ -100,42 +108,65 @@ sup a {
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
   nav a {
     display: block;
   }
 }
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 10px;
+.profile-links {
+  list-style: none;
+  margin: 0;
 }
 
-.social-links a {
+.profile-links li {
+  margin: 6px 0;
+}
+
+.profile-links a {
+  color: #222;
   text-decoration: none;
-  color: #fce779;
 }
 
-.about-container {
+.profile-links a:hover {
+  color: #0f6e56;
+}
+
+.profile-links i {
+  width: 1.4em;
+  margin-right: 8px;
+  text-align: center;
+}
+
+.fa-envelope { color: #555; }
+.fa-google-scholar { color: #4285f4; }
+.fa-orcid { color: #a6ce39; }
+.fa-linkedin { color: #0a66c2; }
+.fa-researchgate { color: #00ccbb; }
+.fa-x-twitter { color: #000; }
+
+/* Two columns: sidebar (photo + links) on the left, sections on the right */
+.layout {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.sidebar {
+  width: 170px;
+  flex-shrink: 0;
 }
 
 .about-photo {
-  width: 140px;
+  width: 100%;
   height: auto;
-  flex-shrink: 0;
   display: block;
+  margin-bottom: 12px;
 }
 
-.about-text {
+.content {
   flex: 1;
+  min-width: 0;
 }
 
 .research-banner {
@@ -145,13 +176,26 @@ sup a {
   margin-bottom: 20px;
 }
 
+/* Phones: sidebar stacks on top, links wrap into a centred row */
 @media (max-width: 600px) {
-  .about-container {
+  .layout {
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sidebar {
+    width: auto;
   }
 
   .about-photo {
     width: 120px;
-    margin: 0 auto;
+    margin: 0 auto 12px;
+  }
+
+  .profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 16px;
   }
 }
